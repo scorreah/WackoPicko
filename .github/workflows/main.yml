@@ -16,4 +16,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: Fluid-Attacks-Results
-          path: /github/workspace/Fluid-Attacks-Results.csv
+          path: Fluid-Attacks-Results.csv
