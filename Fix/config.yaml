@@ -3,7 +3,7 @@ output:
   file_path: ./Fluid-Attacks-Results.csv
   format: CSV
 working_dir: ..
-strict: false
+strict: true
 language: EN
 apk:
   include:
