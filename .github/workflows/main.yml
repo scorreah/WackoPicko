@@ -13,6 +13,7 @@ jobs:
         with:
           args: skims scan Fix/config.yaml
       - name: Upload Fluid-Attacks-Results.csv
+        if: always()
         uses: actions/upload-artifact@v3
         with:
           name: Fluid-Attacks-Results
