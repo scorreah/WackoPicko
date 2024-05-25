@@ -1,6 +1,8 @@
 # .github/workflows/dev.yml
 name: Standalone CLI
+
 on: [push, pull_request]
+
 jobs:
   machineStandalone:
     runs-on: ubuntu-latest
@@ -10,3 +12,8 @@ jobs:
         uses: docker://docker.io/fluidattacks/cli:latest
         with:
           args: skims scan Fix/config.yaml
+      - name: Upload Fluid-Attacks-Results.csv
+        uses: actions/upload-artifact@v3
+        with:
+          name: Fluid-Attacks-Results
+          path: /github/workspace/Fluid-Attacks-Results.csv
